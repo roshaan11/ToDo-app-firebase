@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <link href="/src/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css"> 
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body class="h-screen bg-blue-100">
+  <div class="h-screen w-full flex items-center justify-center ">
+    <div class="bg-white shadow-lg rounded-lg p-8 w-full max-w-sm">
+        <h2 class="text-2xl font-bold text-blue-800 text-center mb-6">Login</h2>
+        
+        <form action="#" method="POST" class="space-y-4">
+        <div>
+            <label for="email" class="block text-sm font-medium text-black">Email</label>
+            <input type="email" id="email" name="email" required
+                class="mt-2 w-full rounded-md border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-gray-100
+                            focus:ring-brand focus:border-brand" placeholder="Enter Your Email"/>
+        </div>
+
+        <div>
+            <label for="password" class="block text-sm font-medium text-black">Password</label>
+            <input type="password" id="password" name="password" required
+                class="mt-2 w-full rounded-md border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-gray-100
+                            focus:ring-brand focus:border-brand" placeholder="Enter Your Password" />
+             <p class="mt-1 text-xs text-gray-400">Minimum 6 characters</p>
+        </div>
+
+        <button type="submit"
+              id="signInBtn"  class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded transition">
+            Log In
+        </button>
+        </form>
+
+        <p class="text-sm text-gray-500 mt-4 text-center">
+        Don't have an account?
+        <a href="signup.html" class="text-gray-500 font-semibold hover:text-blue-800 hover:underline">Sign up</a>
+        </p>
+    </div>
+  </div>
+
+ <script  src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <script type="module" src="login.js"></script>
+</body>
+</html>
