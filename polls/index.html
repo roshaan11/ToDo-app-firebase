@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO-Firebse</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css"
+    />
+    <link href="/src/styles.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+
+<body id="body" class="bg-blue-100">
+  
+  <!-- App Header -->
+  <header class="bg-transparent text-white shadow-md w-full">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+  
+      <div class="text-2xl text-blue-600 font-bold tracking-wide">
+        TaskMate
+      </div>
+
+      <div class="w-full flex justify-center items-center py-2 bg-gradient-to-r ">
+    <h1 class="text-4xl sm:text-3xl lg:text-2xl font-extrabold tracking-tight text-gray-900 text-center">
+      Welcome, 
+      <span id="name-main" class="text-blue-600 drop-shadow-lg">
+        <span class="text-blue-600">...</span>
+      </span>
+    </h1>
+  </div>
+
+    <button
+      id="logout"
+      class="px-5 py-2 sm:px-6 sm:py-2.5 rounded-md bg-blue-600 hover:bg-blue-700 transition duration-200 text-white text-sm sm:text-base font-semibold shadow-sm"
+    >
+      Logout
+    </button> 
+    </div>
+  </header>
+
+  <div id="main" class="min-h-screen flex gap-8 md:flex-row flex-col items-center justify-center">
+     <main
+      class="w-full mt-10 max-w-md p-6 bg-white border border-gray-200 rounded-lg shadow-sm"
+    >
+      <header class="mb-6 flex justify-center">
+        <h1  id="header" class="text-2xl w-full rounded-md font-semibold flex bg-blue-600 justify-center h-16 items-center text-white">To-do Tasks</h1>
+      </header>
+
+      <form id="form" class="flex md:flex-row flex-col gap-2 mb-6">
+        <input
+          id="input"
+          type="text"
+          required
+          placeholder="Your New task's waiting.."
+          class="flex-1 bg-gray-50 border border-gray-300 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 p-2.5"
+        />
+        <button
+          type="submit"
+          id="addtodo"
+          class=" h-10 md:h-0 md:px-4 px-0  rounded-lg bg-blue-700 hover:bg-blue-800 text-white text-sm font-medium"
+        >
+          Add
+        </button>
+      </form>
+
+      <ul id="list" class="space-y-4">
+    
+      </ul>
+
+    
+      <footer class="mt-10 text-center text-md text-gray-400">
+        Developed by <span class="font-bold">Roshaan</span>
+      </footer>
+    </main>
+
+    <div id="Completed" class="w-full min-h-64 h-auto  mt-10 max-w-md p-6 bg-white border border-gray-200 rounded-lg shadow-sm">
+       <span id="Complete" class="w-full flex justify-center h-16 items-center rounded-md text-xl font-semibold bg-blue-600 text-white">Completed To-Do</span>
+       <ul id="Completedtodo" class="mt-6 space-y-4"></ul>
+    </div>
+  </div>
+
+  
+<!-- Edit  -->
+<div id="crud-modal" tabindex="-1"
+     class="overflow-y-auto overflow-x-hidden  backdrop-blur-sm rounded-lg shadow dark:bg-gray-800  fixed top-0 right-0 left-0 z-50 justify-center items-center hidden  w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+    
+</div>
+
+
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.29.4/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
